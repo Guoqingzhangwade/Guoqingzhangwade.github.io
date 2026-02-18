@@ -1,0 +1,484 @@
+/* 
+ * Portfolio Style Sheet
+ * Author: Guoqing Zhang
+ * Last Updated: February 2026
+ * 
+ * This stylesheet is separated from index.html for easy maintenance.
+ * To customize colors, fonts, or spacing, edit the variables below.
+ */
+
+/* ===== CUSTOMIZATION VARIABLES ===== */
+:root {
+    /* Color Scheme - Change these to customize your colors */
+    --primary-blue: #1e3c72;
+    --secondary-blue: #2a5298;
+    --accent-blue: #64b5f6;
+    --purple-gradient-start: #667eea;
+    --purple-gradient-end: #764ba2;
+    
+    /* Text Colors */
+    --text-dark: #2c3e50;
+    --text-medium: #34495e;
+    --text-light: #555;
+    --text-muted: #7f8c8d;
+    
+    /* Background Colors */
+    --bg-light: #f8f9fa;
+    --bg-white: #ffffff;
+    --bg-gradient-start: #f5f7fa;
+    --bg-gradient-end: #c3cfe2;
+    
+    /* Spacing */
+    --spacing-small: 10px;
+    --spacing-medium: 20px;
+    --spacing-large: 30px;
+    --spacing-xlarge: 50px;
+    
+    /* Fonts */
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== BASE STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    line-height: 1.6;
+    color: var(--text-dark);
+    background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: var(--bg-white);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+}
+
+/* ===== HEADER SECTION ===== */
+header {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+    color: white;
+    padding: 80px 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative circles in header background */
+header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -5%;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 50%;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+header .tagline {
+    font-size: 1.3em;
+    opacity: 0.95;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+header .location {
+    font-size: 1em;
+    opacity: 0.8;
+    margin-bottom: 25px;
+}
+
+.links {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 5px;
+    font-size: 0.95em;
+    transition: all 0.3s ease;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+}
+
+.links a:hover {
+    background: rgba(255,255,255,0.2);
+    border-color: white;
+    transform: translateY(-2px);
+}
+
+/* ===== CONTENT SECTION ===== */
+.content {
+    padding: var(--spacing-xlarge);
+}
+
+section {
+    margin-bottom: var(--spacing-xlarge);
+}
+
+h2 {
+    color: var(--primary-blue);
+    font-size: 2em;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 4px solid var(--secondary-blue);
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 80px;
+    height: 4px;
+    background: var(--accent-blue);
+}
+
+/* ===== ABOUT SECTION ===== */
+.about p {
+    font-size: 1.1em;
+    line-height: 1.9;
+    margin-bottom: 20px;
+    color: var(--text-medium);
+}
+
+/* ===== CURRENTLY SECTION ===== */
+.currently {
+    background: linear-gradient(135deg, var(--purple-gradient-start) 0%, var(--purple-gradient-end) 100%);
+    padding: var(--spacing-large);
+    border-radius: 10px;
+    color: white;
+    margin-bottom: var(--spacing-xlarge);
+}
+
+.currently h2 {
+    color: white;
+    border-bottom-color: rgba(255,255,255,0.3);
+}
+
+.currently h2::after {
+    background: rgba(255,255,255,0.5);
+}
+
+.currently-items {
+    display: grid;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.currently-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background: rgba(255,255,255,0.1);
+    padding: 15px;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+}
+
+.currently-item .icon {
+    font-size: 1.5em;
+    flex-shrink: 0;
+}
+
+.currently-item p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* ===== SKILLS SECTION ===== */
+.skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-large);
+}
+
+.skill-category {
+    background: var(--bg-light);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 5px solid var(--secondary-blue);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.skill-category h3 {
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skill-category li {
+    padding: 8px 0;
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill-category li:before {
+    content: "▸";
+    color: var(--secondary-blue);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* ===== PROJECTS SECTION ===== */
+.project {
+    background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-white) 100%);
+    padding: var(--spacing-large);
+    margin-bottom: var(--spacing-large);
+    border-radius: 10px;
+    border-left: 6px solid var(--secondary-blue);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.project:hover {
+    transform: translateX(5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project h3 {
+    color: var(--primary-blue);
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+
+.project .company {
+    color: var(--accent-blue);
+    font-weight: 600;
+    font-size: 0.95em;
+    margin-bottom: 5px;
+}
+
+.project .date {
+    color: var(--text-muted);
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+.project p, .project ul {
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.project ul {
+    margin-left: 20px;
+}
+
+.project li {
+    margin-bottom: 10px;
+}
+
+.project .metrics {
+    background: #e3f2fd;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-size: 0.95em;
+}
+
+.project .metrics strong {
+    color: var(--primary-blue);
+}
+
+/* Project Images */
+.project-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.project .tags {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--purple-gradient-start) 0%, var(--purple-gradient-end) 100%);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: 500;
+}
+
+/* ===== PUBLICATIONS SECTION ===== */
+.publication {
+    background: var(--bg-light);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-blue);
+    transition: all 0.3s ease;
+}
+
+.publication:hover {
+    background: #e3f2fd;
+    transform: translateX(3px);
+}
+
+.publication .authors {
+    color: var(--text-dark);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.publication .title {
+    color: var(--primary-blue);
+    font-size: 1.05em;
+    margin-bottom: 5px;
+}
+
+.publication .venue {
+    color: var(--accent-blue);
+    font-style: italic;
+    font-size: 0.95em;
+}
+
+.publication .status {
+    display: inline-block;
+    background: #4caf50;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+
+.publication .status.under-review {
+    background: #ff9800;
+}
+
+.publication .status.in-prep {
+    background: #9c27b0;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: var(--primary-blue);
+    color: white;
+    text-align: center;
+    padding: var(--spacing-large);
+    font-size: 0.9em;
+}
+
+footer p {
+    opacity: 0.9;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .skills {
+        grid-template-columns: 1fr;
+    }
+    
+    header {
+        padding: 50px 30px;
+    }
+    
+    header h1 {
+        font-size: 2.2em;
+    }
+    
+    .content {
+        padding: var(--spacing-large);
+    }
+    
+    .links {
+        flex-direction: column;
+    }
+    
+    .links a {
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 1.6em;
+    }
+    
+    .project-header {
+        flex-direction: column;
+    }
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+    body {
+        background: white;
+    }
+    
+    .container {
+        box-shadow: none;
+    }
+    
+    header {
+        background: var(--primary-blue);
+        page-break-after: avoid;
+    }
+    
+    .project, .publication {
+        page-break-inside: avoid;
+    }
+}

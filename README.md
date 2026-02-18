@@ -1,89 +1,259 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+# Guoqing Zhang - Portfolio Website
 
-![Academic Pages template example](images/homepage.png "Academic Pages template example")
+A clean, professional portfolio website for robotics engineers and researchers.
 
-# Getting Started
+## 🚀 Quick Start
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+### Option 1: Replace Your Current Template (Recommended)
 
-See more info at https://academicpages.github.io/
+1. **Backup your current site** (download all files first)
+2. **Delete all files** in your `Guoqingzhangwade.github.io` repository
+3. **Upload these files:**
+   - `index.html`
+   - `style.css`
+   - `README.md`
+4. Wait 1-2 minutes for GitHub Pages to rebuild
+5. Visit `https://Guoqingzhangwade.github.io`
 
-## Running locally
+### Option 2: Test First in a New Repository
 
-When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+1. Create a new repository called `portfolio-test`
+2. Upload the files there
+3. Once you're happy, copy to your main site
 
-1. Clone the repository and made updates as detailed above.
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    If you see error `Unable to locate package ruby-bundler`, `Unable to locate package nodejs `, run the following:
-    ```bash
-    sudo apt update && sudo apt upgrade -y
-    ```
-    then try run `sudo apt install ruby-dev ruby-bundler nodejs` again.
+## 📁 File Structure
 
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-
-    If you see file permission error like `Fetching bundler-2.6.3.gem ERROR:  While executing gem (Gem::FilePermissionError) You don't have write permissions for the /var/lib/gems/3.2.0 directory.` or `Bundler::PermissionError: There was an error while trying to write to /usr/local/bin.`
-    Install Gems Locally (Recommended):
-    ```bash
-    bundle config set --local path 'vendor/bundle'
-    ```
-    then try run `bundle install` again. If succeeded, you should see a folder called `vendor` and open `.gitignore` then add `vendor` inside it.
-
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
-    You may also try `bundle exec jekyll serve -l -H localhost` to ensure jekyll to use specific dependencies on your own local machine.
-
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
-
-## Using Docker
-
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
-
-You can build and execute the container by running the following command in the repository:
-
-```bash
-docker compose up
+```
+Guoqingzhangwade.github.io/
+├── index.html              # Main HTML file (content)
+├── style.css               # Stylesheet (design)
+├── README.md               # This file (instructions)
+├── files/                  # Folder for downloadable files
+│   └── Resume_Guoqing_Zhang.pdf
+└── images/                 # Folder for project images
+    ├── jnj_system.jpg
+    ├── auris_speedgoat.jpg
+    ├── phd_robot.jpg
+    └── force_estimation.jpg
 ```
 
-You should now be able to access the website from `localhost:4000`.
+## ✏️ How to Edit Content
 
-# Maintenance
+### 1. Update Your Links
 
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+**File:** `index.html` (around line 14)
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+Find:
+```html
+<a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank">💼 LinkedIn</a>
+```
 
-## Bugfixes and enhancements
+Change `YOUR_LINKEDIN` to your actual LinkedIn username.
 
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
+### 2. Add Your Resume
 
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+1. Upload your resume PDF to the `files/` folder
+2. Name it: `Resume_Guoqing_Zhang.pdf`
+3. The resume link will work automatically
+
+### 3. Add Project Images
+
+**Step 1:** Create an `images` folder in your repository
+
+**Step 2:** Upload your images
+
+**Step 3:** Edit `index.html` and find the commented-out image lines:
+```html
+<!-- <img src="images/jnj_system.jpg" alt="J&J System Diagram" class="project-image"> -->
+```
+
+**Step 4:** Remove the `<!--` and `-->` to uncomment:
+```html
+<img src="images/jnj_system.jpg" alt="J&J System Diagram" class="project-image">
+```
+
+### 4. Edit Text Content
+
+All content is in `index.html`. Just find the text you want to change and edit it directly.
+
+**Example:** To change the "About Me" section, find:
+```html
+<section class="about">
+    <h2>About Me</h2>
+    <p>
+        I'm a Robotics R&D Engineer...
+    </p>
+</section>
+```
+
+Just edit the text between the `<p>` tags.
+
+### 5. Update "What I'm Working On"
+
+Find the `.currently` section (around line 30) and update:
+```html
+<div class="currently-item">
+    <span class="icon">🎓</span>
+    <p><strong>Your Update</strong> — Description here</p>
+</div>
+```
+
+## 🎨 How to Customize Design
+
+### Change Colors
+
+**File:** `style.css` (lines 10-24)
+
+```css
+:root {
+    /* Change these hex codes to customize colors */
+    --primary-blue: #1e3c72;      /* Main dark color */
+    --secondary-blue: #2a5298;    /* Medium color */
+    --accent-blue: #64b5f6;       /* Light accent */
+    /* ... etc */
+}
+```
+
+Use a color picker like [Coolors.co](https://coolors.co) to find new colors.
+
+### Change Fonts
+
+**File:** `style.css` (line 27)
+
+```css
+--font-main: 'Your Font Name Here', sans-serif;
+```
+
+For custom fonts, use [Google Fonts](https://fonts.google.com).
+
+### Adjust Spacing
+
+**File:** `style.css` (lines 20-23)
+
+```css
+--spacing-small: 10px;    /* Small gaps */
+--spacing-medium: 20px;   /* Medium gaps */
+--spacing-large: 30px;    /* Large gaps */
+--spacing-xlarge: 50px;   /* Extra large gaps */
+```
+
+## 📝 Common Editing Tasks
+
+### Add a New Project
+
+Copy an existing project block in `index.html`:
+
+```html
+<div class="project">
+    <div class="project-header">
+        <div>
+            <div class="company">Your Company Name</div>
+            <h3>Project Title</h3>
+        </div>
+        <div class="date">Date Range</div>
+    </div>
+    <p>Project description...</p>
+    <ul>
+        <li>Achievement 1</li>
+        <li>Achievement 2</li>
+    </ul>
+    <div class="metrics">
+        <strong>Results:</strong> Your metrics here
+    </div>
+    <div class="tags">
+        <span class="tag">Skill 1</span>
+        <span class="tag">Skill 2</span>
+    </div>
+</div>
+```
+
+### Add a New Publication
+
+Copy an existing publication block:
+
+```html
+<div class="publication">
+    <div class="authors">Author Names</div>
+    <div class="title">"Paper Title"</div>
+    <div class="venue">
+        Journal/Conference Name
+        <span class="status">Published</span>
+    </div>
+</div>
+```
+
+### Remove a Section
+
+Find the section you want to remove (e.g., "Currently Working On") and delete from `<section class="currently">` to `</section>`.
+
+## 🔧 Troubleshooting
+
+### Changes not showing up?
+- Wait 1-2 minutes for GitHub Pages to rebuild
+- Hard refresh your browser: `Ctrl+Shift+R` (Windows) or `Cmd+Shift+R` (Mac)
+- Clear your browser cache
+
+### Images not loading?
+- Check that the image is in the `images/` folder
+- Check that the filename matches exactly (case-sensitive)
+- Make sure the path is correct: `images/filename.jpg`
+
+### Layout looks broken?
+- Make sure you didn't accidentally delete any HTML tags
+- Check that all `<div>` tags have matching `</div>` tags
+- Validate your HTML at [validator.w3.org](https://validator.w3.org)
+
+## 📱 Testing on Different Devices
+
+The site is responsive and works on:
+- Desktop computers
+- Tablets
+- Mobile phones
+
+Test your site on multiple devices to ensure it looks good everywhere.
+
+## 🎯 Best Practices
+
+1. **Keep it updated** - Update your "Currently Working On" section regularly
+2. **Add visuals** - Images make your projects more engaging
+3. **Use specific metrics** - "Reduced time by 50%" is better than "Improved performance"
+4. **Keep it concise** - Highlight your best 3-5 projects, not everything
+5. **Check links** - Make sure all your links work before sharing
+
+## 📚 Learning Resources
+
+- **HTML Tutorial:** [W3Schools HTML](https://www.w3schools.com/html/)
+- **CSS Tutorial:** [W3Schools CSS](https://www.w3schools.com/css/)
+- **GitHub Pages Docs:** [pages.github.com](https://pages.github.com)
+
+## 💡 Maintenance Tips
+
+### Monthly Updates
+- [ ] Update "What I'm Working On" section
+- [ ] Add new publications if any
+- [ ] Check that all links still work
+
+### Before Job Applications
+- [ ] Ensure resume PDF is current
+- [ ] Proofread all text
+- [ ] Test site on mobile device
+- [ ] Verify all images load properly
+
+## 🆘 Getting Help
+
+If you run into issues:
+
+1. **Check this README** - Most common questions are answered here
+2. **Google the error** - If you see an error message, search for it
+3. **GitHub Issues** - Create an issue in your repository for tracking
+4. **Stack Overflow** - Great community for HTML/CSS questions
+
+## 📄 License
+
+This template is free to use and modify for your personal portfolio.
 
 ---
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
 
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-</div>
+**Last Updated:** February 2026  
+**Author:** Guoqing Zhang  
+**Contact:** guoqing.wade3@gmail.com

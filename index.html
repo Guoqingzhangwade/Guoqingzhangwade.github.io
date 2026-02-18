@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guoqing Zhang - Robotics R&D Engineer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <div class="header-content">
+                <h1>Guoqing Zhang</h1>
+                <p class="tagline">Robotics R&D Engineer | Real-Time Control & State Estimation</p>
+                <p class="location">📍 North Bergen, NJ | Ph.D. Candidate, Stevens Institute of Technology</p>
+                <div class="links">
+                    <a href="mailto:guoqing.wade3@gmail.com">📧 Email</a>
+                    <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank">💼 LinkedIn</a>
+                    <a href="https://github.com/Guoqingzhangwade" target="_blank">💻 GitHub</a>
+                    <a href="files/Resume_Guoqing_Zhang.pdf" target="_blank">📄 Resume</a>
+                </div>
+            </div>
+        </header>
+        
+        <div class="content">
+            <!-- Currently Section -->
+            <section class="currently">
+                <h2>What I'm Working On</h2>
+                <div class="currently-items">
+                    <div class="currently-item">
+                        <span class="icon">🎓</span>
+                        <p><strong>PhD Defense April 2026</strong> — Completing research on concurrent shape-wrench estimation for continuum robots using SE(3) Lie group formulations</p>
+                    </div>
+                    <div class="currently-item">
+                        <span class="icon">🔍</span>
+                        <p><strong>Job Search</strong> — Seeking Senior Software Engineer positions in robotics, focusing on real-time controls and state estimation systems</p>
+                    </div>
+                    <div class="currently-item">
+                        <span class="icon">📝</span>
+                        <p><strong>Research Publication</strong> — Preparing capstone paper for IEEE Transactions on Robotics on integrated shape and force sensing</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- About Section -->
+            <section class="about">
+                <h2>About Me</h2>
+                <p>
+                    I'm a Robotics R&D Engineer with 5+ years of experience building and validating 
+                    real-time control and estimation systems for continuum and surgical robots. I've had the 
+                    privilege of delivering production-grade tooling in collaboration with <strong>Johnson & Johnson</strong> 
+                    and <strong>Auris Health</strong>, with expertise in C++/Python, ROS2, and hardware-in-the-loop testing.
+                </p>
+                <p>
+                    Currently completing my Ph.D. in Mechanical Engineering at Stevens Institute of Technology, 
+                    my research focuses on developing advanced state estimation algorithms that enable surgical 
+                    robots to estimate their shape and sense external forces in real-time—achieving sub-millimeter 
+                    accuracy with Extended Kalman Filtering at up to 1kHz.
+                </p>
+                <p>
+                    My work spans the full robotics stack: from mechanical design and mathematical modeling to 
+                    embedded systems integration, real-time control implementation, and experimental validation 
+                    with hardware-in-the-loop platforms.
+                </p>
+            </section>
+            
+            <!-- Skills Section -->
+            <section class="skills-section">
+                <h2>Technical Skills</h2>
+                <div class="skills">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <ul>
+                            <li>C++ (C++17, OOP)</li>
+                            <li>Python</li>
+                            <li>MATLAB/Simulink</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Robotics & Control</h3>
+                        <ul>
+                            <li>ROS / ROS2</li>
+                            <li>State estimation (EKF/IMM)</li>
+                            <li>Sensor fusion</li>
+                            <li>Kinematics & statics</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Real-Time Systems</h3>
+                        <ul>
+                            <li>Simulink Real-Time</li>
+                            <li>Speedgoat hardware</li>
+                            <li>EtherCAT communication</li>
+                            <li>Hardware-in-the-loop testing</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Hardware & Design</h3>
+                        <ul>
+                            <li>Motor/servo drives (Elmo)</li>
+                            <li>IMU/EM/vision sensors</li>
+                            <li>SolidWorks CAD</li>
+                            <li>Cable-driven actuation</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Featured Projects Section -->
+            <section class="projects-section">
+                <h2>Featured Projects & Experience</h2>
+                
+                <!-- Johnson & Johnson Project -->
+                <div class="project">
+                    <div class="project-header">
+                        <div>
+                            <div class="company">Johnson & Johnson (Ottava Surgical Robotics Program)</div>
+                            <h3>Continuum Instrument State Observer Development</h3>
+                        </div>
+                        <div class="date">Oct 2021 – May 2022</div>
+                    </div>
+                    <p>
+                        Developed real-time state estimation systems for a 7-DOF flexible surgical instrument 
+                        with cable-driven bending and rotation. Built configuration-space Extended Kalman Filter 
+                        observers to estimate instrument pose from multi-sensor fusion.
+                    </p>
+                    <ul>
+                        <li>Derived continuum-instrument kinematics and geometric Jacobians for cable-driven bending wrist</li>
+                        <li>Implemented EKF observer with analytic measurement Jacobians, fusing OptiTrack pose data</li>
+                        <li>Developed pose-error analysis pipeline using Gaussian position ellipsoid and Bingham quaternion statistics</li>
+                        <li>Built ROS2/RViz tooling for real-time multi-sensor debugging and experimental validation</li>
+                    </ul>
+                    <div class="metrics">
+                        <strong>Performance:</strong> Achieved &lt;5mm position error and &lt;5° orientation error (typical), 
+                        with worst-case ~17mm / ~23° | <strong>Validation:</strong> OptiTrack motion capture system
+                    </div>
+                    
+                    <!-- Uncomment and add your image here -->
+                    <!-- <img src="images/jnj_system.jpg" alt="J&J System Diagram" class="project-image"> -->
+                    
+                    <div class="tags">
+                        <span class="tag">ROS2</span>
+                        <span class="tag">EKF</span>
+                        <span class="tag">OptiTrack</span>
+                        <span class="tag">Sensor Fusion</span>
+                        <span class="tag">C++/Python</span>
+                    </div>
+                </div>
+                
+                <!-- Auris Health Project -->
+                <div class="project">
+                    <div class="project-header">
+                        <div>
+                            <div class="company">Auris Health (Johnson & Johnson)</div>
+                            <h3>Real-Time Control Platform for Bronchoscopy Robot</h3>
+                        </div>
+                        <div class="date">May 2020 – Aug 2020</div>
+                    </div>
+                    <p>
+                        Architected a Simulink Real-Time prototyping platform on Speedgoat hardware to accelerate 
+                        control algorithm development for surgical robotics. Integrated multi-sensor hardware stack 
+                        with deterministic real-time communication.
+                    </p>
+                    <ul>
+                        <li>Built Simulink Real-Time workflow with automatic C code generation, enabling online tuning and 1kHz cycle-level logging</li>
+                        <li>Integrated EM tracker, IMU, torque cells, and Elmo servo drives via EtherCAT deterministic communication</li>
+                        <li>Implemented advanced control algorithms: wire tensioning, orientation calibration, and actuation compensation</li>
+                        <li>Performed system identification on instrument drive motors using chirp signal excitation and frequency response analysis</li>
+                    </ul>
+                    <div class="metrics">
+                        <strong>Impact:</strong> Reduced control iteration time from days to hours | 
+                        <strong>Performance:</strong> 1kHz real-time execution vs. 100Hz baseline | 
+                        <strong>Hardware:</strong> 6+ actuators with sub-millisecond control loops
+                    </div>
+                    
+                    <!-- Uncomment and add your image here -->
+                    <!-- <img src="images/auris_speedgoat.jpg" alt="Speedgoat Setup" class="project-image"> -->
+                    
+                    <div class="tags">
+                        <span class="tag">Simulink Real-Time</span>
+                        <span class="tag">Speedgoat</span>
+                        <span class="tag">EtherCAT</span>
+                        <span class="tag">System ID</span>
+                        <span class="tag">MATLAB</span>
+                    </div>
+                </div>
+                
+                <!-- PhD Research Project 1 -->
+                <div class="project">
+                    <div class="project-header">
+                        <div>
+                            <div class="company">Stevens Institute of Technology - PhD Research</div>
+                            <h3>Adaptive Shape Estimation for Continuum Robots</h3>
+                        </div>
+                        <div class="date">2019 – 2025</div>
+                    </div>
+                    <p>
+                        Developed novel stochastic shape estimation algorithms in polynomial-curvature state space 
+                        with adaptive multi-model filtering for robustness under sparse, noisy sensing conditions.
+                    </p>
+                    <ul>
+                        <li>Implemented Interacting Multiple Model EKF (IMM-EKF) for adaptive estimation across varying deformation regimes</li>
+                        <li>Built real-time estimation stack on Speedgoat/Simulink and ROS2 (C++/Python) running at 100Hz-1kHz</li>
+                        <li>Designed validation pipeline with distributed IMU sensing, torque cells, and ArUco marker vision tracking</li>
+                        <li>Released reusable ROS2 packages for continuum robot estimation used across research lab</li>
+                    </ul>
+                    <div class="metrics">
+                        <strong>Accuracy:</strong> 0.38% tip position error, 0.24% shape position error, 0.63°/100mm tip bending | 
+                        <strong>Publication:</strong> IEEE Transactions on Robotics (T-RO), Accepted 2025
+                    </div>
+                    
+                    <!-- Uncomment and add your image here -->
+                    <!-- <img src="images/phd_robot.jpg" alt="Continuum Robot Hardware" class="project-image"> -->
+                    
+                    <div class="tags">
+                        <span class="tag">IMM-EKF</span>
+                        <span class="tag">ROS2</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">Speedgoat</span>
+                        <span class="tag">Computer Vision</span>
+                    </div>
+                </div>
+                
+                <!-- PhD Research Project 2 -->
+                <div class="project">
+                    <div class="project-header">
+                        <div>
+                            <div class="company">Stevens Institute of Technology - PhD Research</div>
+                            <h3>Integrated Shape-Force Estimation Framework</h3>
+                        </div>
+                        <div class="date">2022 – Present</div>
+                    </div>
+                    <p>
+                        Built an integrated estimation framework combining polynomial-curvature kinematics with 
+                        virtual work principles to simultaneously estimate continuum robot shape and external forces.
+                    </p>
+                    <ul>
+                        <li>Developed SE(3) shape-wrench estimation using Lie group formulations for geometric consistency</li>
+                        <li>Integrated cable tension measurements with tip pose for closed-form force estimation</li>
+                        <li>Built modular actuation units with 10 torque cells sampled at 1kHz for real-time force sensing</li>
+                        <li>Validated with OptiTrack motion capture and developed runtime-characterized real-time feasibility analysis</li>
+                    </ul>
+                    <div class="metrics">
+                        <strong>Accuracy:</strong> 0.20mm arclength-averaged shape MAE, 0.05N overall force MAE | 
+                        <strong>Status:</strong> Under review at IEEE/ASME Transactions on Mechatronics + In preparation for IEEE T-RO
+                    </div>
+                    
+                    <!-- Uncomment and add your image here -->
+                    <!-- <img src="images/force_estimation.jpg" alt="Force Estimation Setup" class="project-image"> -->
+                    
+                    <div class="tags">
+                        <span class="tag">SE(3) Lie Groups</span>
+                        <span class="tag">Force Sensing</span>
+                        <span class="tag">Torque Cells</span>
+                        <span class="tag">SolidWorks</span>
+                        <span class="tag">Real-Time Systems</span>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Publications Section -->
+            <section class="publications-section">
+                <h2>Selected Publications</h2>
+                
+                <div class="publication">
+                    <div class="authors">G. Zhang and L. Wang</div>
+                    <div class="title">"Stochastic Adaptive Estimation in Polynomial Curvature Shape State Space for Continuum Robots"</div>
+                    <div class="venue">
+                        IEEE Transactions on Robotics (T-RO)
+                        <span class="status">Accepted 2025</span>
+                    </div>
+                </div>
+                
+                <div class="publication">
+                    <div class="authors">G. Zhang, Z. Chen, and L. Wang</div>
+                    <div class="title">"Integrated Shape-Force Estimation for Continuum Robots: A Virtual-Work and Polynomial-Curvature Framework"</div>
+                    <div class="venue">
+                        IEEE/ASME Transactions on Mechatronics
+                        <span class="status under-review">Under Review</span>
+                    </div>
+                </div>
+                
+                <div class="publication">
+                    <div class="authors">G. Zhang, Q. Zhao, and L. Wang</div>
+                    <div class="title">"Concurrent Estimation of Shape and External Wrench for Continuum Robots on SE(3) via Closed-Form Filtering"</div>
+                    <div class="venue">
+                        IEEE Transactions on Robotics (T-RO)
+                        <span class="status in-prep">In Preparation</span>
+                    </div>
+                </div>
+                
+                <div class="publication">
+                    <div class="authors">Q. Zhao, G. Zhang, H. Jafarnejadsani, L. Wang</div>
+                    <div class="title">"A Modular Continuum Manipulator for Aerial Manipulation and Perching"</div>
+                    <div class="venue">
+                        ASME International Design Engineering Technical Conferences (IDETC), 2022
+                        <span class="status">Published</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <footer>
+            <p>&copy; 2026 Guoqing Zhang · Built with passion for robotics · Last updated: February 2026</p>
+        </footer>
+    </div>
+</body>
+</html>
