@@ -314,8 +314,8 @@
                     <ul>
                         <li>Formulated a noise-weighted observability analysis to assess sensing quality in curvature-space estimation</li>
                         <li>Implemented IMM-EKF pipelines that blend constant-curvature and higher-order polynomial-curvature models</li>
-                        <li>Built real-time validation stacks on Speedgoat, Simulink, ROS2, C++, and Python</li>
-                        <li>Validated the estimator on a modular continuum robot testbed under free-space and tip-loaded experiments</li>
+                        <li>Validated the estimator under limited sensing using a single tip-pose measurement in both simulations and hardware experiments</li>
+                        <li>Benchmarked against constant-curvature and single-model PCK EKFs to isolate the benefit of multimodel adaptation</li>
                     </ul>
                     <div class="metrics">
                         <strong>Accuracy:</strong> 0.38 percent tip position error, 0.24 percent shape position
@@ -330,10 +330,10 @@
                     </div>
                     <div class="tags">
                         <span class="tag">IMM-EKF</span>
-                        <span class="tag">ROS2</span>
-                        <span class="tag">C++</span>
-                        <span class="tag">Speedgoat</span>
-                        <span class="tag">Computer vision</span>
+                        <span class="tag">Polynomial curvature</span>
+                        <span class="tag">Sparse sensing</span>
+                        <span class="tag">Observability</span>
+                        <span class="tag">Tip-pose sensing</span>
                     </div>
                 </article>
 
@@ -354,7 +354,7 @@
                         <li>Derived a virtual-work static formulation directly in polynomial-curvature coordinates for shape-to-wrench inference</li>
                         <li>Combined tip-pose sensing with cable tensions using a compact weighted least-squares redundancy formulation</li>
                         <li>Built a torque-cell-enabled cable-driven continuum robot platform for synchronized hardware validation</li>
-                        <li>Demonstrated a lightweight pipeline with closed-form, iteration-free force estimation suitable for real-time deployment</li>
+                        <li>Demonstrated a lightweight pipeline with closed-form, iteration-free force estimation and experimental validation</li>
                     </ul>
                     <div class="metrics">
                         <strong>Accuracy:</strong> Second-order polynomial curvature achieved 0.20 mm
@@ -368,11 +368,12 @@
                         </p>
                     </div>
                     <div class="tags">
-                        <span class="tag">SE(3)</span>
+                        <span class="tag">PCK</span>
+                        <span class="tag">Virtual work</span>
                         <span class="tag">Force sensing</span>
                         <span class="tag">Torque cells</span>
-                        <span class="tag">SolidWorks</span>
-                        <span class="tag">Real-time systems</span>
+                        <span class="tag">Weighted least squares</span>
+                        <span class="tag">Cable-driven robots</span>
                     </div>
                 </article>
             </section>
