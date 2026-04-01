@@ -340,6 +340,11 @@ h2::after {
     background: linear-gradient(180deg, #dfe7ea, #eef3f5);
 }
 
+.showcase-image-contain {
+    object-fit: contain;
+    background: linear-gradient(180deg, #dfe7ea, #eef3f5);
+}
+
 .showcase-body {
     padding: 24px;
 }
