@@ -307,18 +307,20 @@
                         <div class="date">2019 - 2025</div>
                     </div>
                     <p>
-                        Developed stochastic shape estimation algorithms in a polynomial-curvature state
-                        space with adaptive multi-model filtering for robustness under sparse, noisy sensing.
+                        Developed a stochastic observer for continuum-robot shape estimation in a
+                        polynomial-curvature state space, enabling robust reconstruction from sparse,
+                        noisy sensing and changing deformation regimes.
                     </p>
                     <ul>
-                        <li>Implemented IMM-EKF estimation across varying deformation regimes</li>
-                        <li>Built real-time estimation stacks on Speedgoat, Simulink, ROS2, C++, and Python</li>
-                        <li>Designed validation around IMUs, torque cells, and ArUco-based vision tracking</li>
-                        <li>Released reusable ROS2 estimation packages used across the lab</li>
+                        <li>Formulated a noise-weighted observability analysis to assess sensing quality in curvature-space estimation</li>
+                        <li>Implemented IMM-EKF pipelines that blend constant-curvature and higher-order polynomial-curvature models</li>
+                        <li>Built real-time validation stacks on Speedgoat, Simulink, ROS2, C++, and Python</li>
+                        <li>Validated the estimator on a modular continuum robot testbed under free-space and tip-loaded experiments</li>
                     </ul>
                     <div class="metrics">
                         <strong>Accuracy:</strong> 0.38 percent tip position error, 0.24 percent shape position
-                        error, and 0.63 degrees per 100 mm tip bending.
+                        error, 0.63 degrees per 100 mm tip bending error, and 0.54 degrees per 100 mm
+                        shape bending error.
                     </div>
                     <div class="project-media">
                         <img src="images/Large_scale_continuum_testbed.jpg" alt="Continuum robot shape estimation platform illustration" class="project-image project-image-portrait" loading="lazy">
@@ -344,19 +346,20 @@
                         <div class="date">2022 - Present</div>
                     </div>
                     <p>
-                        Built an integrated estimation framework combining polynomial-curvature kinematics
-                        with virtual-work principles to simultaneously estimate continuum robot shape and
-                        external forces.
+                        Developed a two-stage curvature-space framework that fuses cable tensions with
+                        tip-pose sensing to estimate both continuum robot shape and distal interaction
+                        forces.
                     </p>
                     <ul>
-                        <li>Developed SE(3) shape-wrench estimation using Lie group formulations</li>
-                        <li>Integrated cable tension measurements with tip pose for force inference</li>
-                        <li>Built modular actuation units with 10 torque cells sampled at 1 kHz</li>
-                        <li>Validated performance with OptiTrack motion capture and runtime feasibility analysis</li>
+                        <li>Derived a virtual-work static formulation directly in polynomial-curvature coordinates for shape-to-wrench inference</li>
+                        <li>Combined tip-pose sensing with cable tensions using a compact weighted least-squares redundancy formulation</li>
+                        <li>Built a torque-cell-enabled cable-driven continuum robot platform for synchronized hardware validation</li>
+                        <li>Demonstrated a lightweight pipeline with closed-form, iteration-free force estimation suitable for real-time deployment</li>
                     </ul>
                     <div class="metrics">
-                        <strong>Accuracy:</strong> 0.20 mm arc-length-averaged shape MAE and 0.05 N overall
-                        force MAE on the experimental platform.
+                        <strong>Accuracy:</strong> Second-order polynomial curvature achieved 0.20 mm
+                        arc-length-averaged shape MAE and 0.05 N overall force MAE, outperforming
+                        first-order and zero-order baselines in force estimation.
                     </div>
                     <div class="project-media">
                         <img src="images/force-estimation-platform.svg" alt="Integrated shape and force estimation mechatronics illustration" class="project-image" loading="lazy">
@@ -381,8 +384,8 @@
                     <div class="authors">G. Zhang and L. Wang</div>
                     <div class="title">Stochastic Adaptive Estimation in Polynomial Curvature Shape State Space for Continuum Robots</div>
                     <div class="venue">
-                        IEEE Transactions on Robotics
-                        <span class="status">Published 2026</span>
+                        IEEE Transactions on Robotics, Vol. 42, 2026
+                        <span class="status">Published</span>
                     </div>
                 </article>
 
