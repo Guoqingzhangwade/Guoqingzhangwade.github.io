@@ -158,7 +158,7 @@
                     </article>
 
                     <article class="showcase-card">
-                        <img src="images/LAH_grasping_scenarios.png" alt="Laboratory Assistive Hand grasping laboratory glassware and tools" class="showcase-image showcase-image-contain" loading="lazy">
+                        <img src="images/LAH_grasping_scenarios.png" alt="Illustration of a tendon-driven laboratory assistive hand" class="showcase-image" loading="lazy">
                         <div class="showcase-body">
                             <p class="card-label">Team Course Project | Columbia University</p>
                             <h3>Laboratory Assistive Hand (LAH)</h3>
@@ -281,7 +281,7 @@
                     </p>
                     <ul>
                         <li>Built a workflow with automatic C code generation, online tuning, and 1 kHz logging</li>
-                        <li>Integrated EM tracker, IMU, torque cells, and Elmo servo drives over EtherCAT</li>
+                        <li>Integrated EM tracker, torque cells, and Elmo servo drives over UDP and EtherCAT</li>
                         <li>Implemented wire tensioning, orientation calibration, and actuation compensation routines</li>
                         <li>Performed motor system identification using chirp excitation and frequency response analysis</li>
                     </ul>
@@ -304,26 +304,24 @@
                             <div class="company">Stevens Institute of Technology | Ph.D. Research</div>
                             <h3>Adaptive Shape Estimation for Continuum Robots</h3>
                         </div>
-                        <div class="date">2019 - 2025</div>
+                        <div class="date">2022 - 2025</div>
                     </div>
                     <p>
-                        Developed a stochastic observer for continuum-robot shape estimation in a
-                        polynomial-curvature state space, enabling robust reconstruction from sparse,
-                        noisy sensing and changing deformation regimes.
+                        Developed stochastic shape estimation algorithms in a polynomial-curvature state
+                        space with adaptive multi-model filtering for robustness under sparse, noisy sensing.
                     </p>
                     <ul>
-                        <li>Formulated a noise-weighted observability analysis to assess sensing quality in curvature-space estimation</li>
-                        <li>Implemented IMM-EKF pipelines that blend constant-curvature and higher-order polynomial-curvature models</li>
-                        <li>Validated the estimator under limited sensing using a single tip-pose measurement in both simulations and hardware experiments</li>
-                        <li>Benchmarked against constant-curvature and single-model PCK EKFs to isolate the benefit of multimodel adaptation</li>
+                        <li>Implemented IMM-EKF estimation across varying deformation regimes</li>
+                        <li>Built real-time estimation stacks on ROS2 and Python</li>
+                        <li>Designed validation around IMUs, torque cells, and ArUco-based vision tracking</li>
+                        <li>Released reusable ROS2 estimation packages used across the lab</li>
                     </ul>
                     <div class="metrics">
                         <strong>Accuracy:</strong> 0.38 percent tip position error, 0.24 percent shape position
-                        error, 0.63 degrees per 100 mm tip bending error, and 0.54 degrees per 100 mm
-                        shape bending error.
+                        error, and 0.63 degrees per 100 mm tip bending.
                     </div>
                     <div class="project-media">
-                        <img src="images/Large_scale_continuum_testbed.jpg" alt="Continuum robot shape estimation platform illustration" class="project-image project-image-portrait" loading="lazy">
+                        <img src="images/one_seg_exp_scenario.svg" alt="Continuum robot shape estimation platform illustration" class="project-image project-image-portrait" loading="lazy">
                         <p class="media-caption">
                             Modular testbed used to connect sensing, estimation, and repeatable hardware experiments.
                         </p>
@@ -357,12 +355,12 @@
                         <li>Demonstrated a lightweight pipeline with closed-form, iteration-free force estimation and experimental validation</li>
                     </ul>
                     <div class="metrics">
-                        <strong>Accuracy:</strong> Second-order polynomial curvature achieved 0.20 mm
-                        arc-length-averaged shape MAE and 0.05 N overall force MAE, outperforming
-                        first-order and zero-order baselines in force estimation.
+                        <strong>Accuracy:</strong> In simulation, second-order polynomial curvature achieved
+                        0.33 mm tip-position MAE, 0.54 mm arc-length-averaged shape-position MAE,
+                        and 0.468 N force-estimation error.
                     </div>
                     <div class="project-media">
-                        <img src="images/force-estimation-platform.svg" alt="Integrated shape and force estimation mechatronics illustration" class="project-image" loading="lazy">
+                        <img src="images/integrated_shape_force_sim_est.jpg" alt="Integrated shape and force estimation mechatronics illustration" class="project-image" loading="lazy">
                         <p class="media-caption">
                             Custom mechatronics platform with cable routing, inline sensing, and synchronized data capture.
                         </p>
