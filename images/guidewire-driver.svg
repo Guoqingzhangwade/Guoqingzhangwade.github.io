@@ -1,0 +1,27 @@
+﻿<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1000" fill="#0A1220"/>
+  <rect x="48" y="48" width="1504" height="904" rx="28" fill="#10263D" stroke="#3E6485" stroke-width="2"/>
+  <text x="120" y="142" fill="#F4F7F8" font-family="IBM Plex Sans, Arial, sans-serif" font-size="34" font-weight="700">Robotic Guidewire Driving System</text>
+  <text x="120" y="190" fill="#9DB8C5" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20">Compact feed and rotation module for precision instrument handling</text>
+  <rect x="214" y="468" width="1170" height="72" rx="36" fill="#E7EEF1"/>
+  <path d="M260 504H1264" stroke="#10263D" stroke-width="12" stroke-linecap="round" stroke-dasharray="4 28"/>
+  <rect x="302" y="356" width="240" height="292" rx="30" fill="#18364B" stroke="#73B8B4" stroke-width="3"/>
+  <circle cx="422" cy="502" r="88" fill="#DB7E38"/>
+  <circle cx="422" cy="502" r="44" fill="#F4F7F8"/>
+  <circle cx="422" cy="502" r="14" fill="#18364B"/>
+  <rect x="618" y="384" width="214" height="236" rx="28" fill="#152E45" stroke="#F3C08C" stroke-width="3"/>
+  <circle cx="726" cy="500" r="74" fill="#73B8B4"/>
+  <circle cx="726" cy="500" r="28" fill="#F4F7F8"/>
+  <rect x="924" y="356" width="310" height="292" rx="30" fill="#152E45" stroke="#73B8B4" stroke-width="3"/>
+  <rect x="982" y="420" width="194" height="60" rx="20" fill="#F4F7F8"/>
+  <rect x="982" y="520" width="194" height="60" rx="20" fill="#F3C08C"/>
+  <path d="M542 502H618" stroke="#DB7E38" stroke-width="8" stroke-linecap="round"/>
+  <path d="M832 502H924" stroke="#73B8B4" stroke-width="8" stroke-linecap="round"/>
+  <rect x="1186" y="246" width="214" height="104" rx="22" fill="#0E1C2B" stroke="#3E6485" stroke-width="2"/>
+  <text x="1222" y="294" fill="#F4F7F8" font-family="IBM Plex Sans, Arial, sans-serif" font-size="24" font-weight="700">Control Loop</text>
+  <text x="1224" y="326" fill="#9DB8C5" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18">Feed, twist, safety logic</text>
+  <path d="M1294 350V420" stroke="#9DB8C5" stroke-width="3" stroke-dasharray="10 10"/>
+  <text x="324" y="726" fill="#F3C08C" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22">Traction wheel</text>
+  <text x="648" y="726" fill="#F3C08C" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22">Rotation stage</text>
+  <text x="974" y="726" fill="#F3C08C" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22">Feed carriage and sensors</text>
+</svg>

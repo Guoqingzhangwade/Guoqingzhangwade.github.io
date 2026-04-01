@@ -1,0 +1,37 @@
+﻿<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1000" fill="#F3F6F7"/>
+  <rect x="48" y="48" width="1504" height="904" rx="28" fill="#FCFDFD" stroke="#C8D7DF" stroke-width="2"/>
+  <text x="120" y="142" fill="#18364B" font-family="IBM Plex Sans, Arial, sans-serif" font-size="34" font-weight="700">Integrated Shape-Force Mechatronics Rig</text>
+  <text x="120" y="190" fill="#4D5B68" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20">Torque sensing, synchronized acquisition, and cable-driven actuation</text>
+  <rect x="160" y="282" width="440" height="380" rx="30" fill="#E8EFF2" stroke="#73B8B4" stroke-width="3"/>
+  <rect x="240" y="354" width="180" height="214" rx="24" fill="#18364B"/>
+  <rect x="450" y="334" width="76" height="76" rx="18" fill="#DB7E38"/>
+  <rect x="450" y="444" width="76" height="76" rx="18" fill="#73B8B4"/>
+  <rect x="450" y="554" width="76" height="76" rx="18" fill="#3E6485"/>
+  <circle cx="330" cy="462" r="60" fill="#F3C08C"/>
+  <circle cx="330" cy="462" r="32" fill="#FCFDFD"/>
+  <path d="M540 372C640 372 710 340 794 280" stroke="#DB7E38" stroke-width="8" stroke-linecap="round"/>
+  <path d="M540 482C668 488 760 466 850 418" stroke="#73B8B4" stroke-width="8" stroke-linecap="round"/>
+  <path d="M540 592C650 620 742 620 860 590" stroke="#3E6485" stroke-width="8" stroke-linecap="round"/>
+  <rect x="856" y="214" width="196" height="126" rx="24" fill="#10263D"/>
+  <text x="890" y="270" fill="#F4F7F8" font-family="IBM Plex Sans, Arial, sans-serif" font-size="24" font-weight="700">Load Cell Rack</text>
+  <text x="890" y="308" fill="#B8C9D0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18">10 channels at 1 kHz</text>
+  <rect x="920" y="402" width="360" height="248" rx="28" fill="#10263D"/>
+  <text x="960" y="460" fill="#F4F7F8" font-family="IBM Plex Sans, Arial, sans-serif" font-size="28" font-weight="700">Data Flow</text>
+  <rect x="960" y="492" width="120" height="88" rx="18" fill="#18364B" stroke="#73B8B4" stroke-width="2"/>
+  <rect x="1122" y="492" width="120" height="88" rx="18" fill="#18364B" stroke="#DB7E38" stroke-width="2"/>
+  <rect x="1284" y="492" width="120" height="88" rx="18" fill="#18364B" stroke="#73B8B4" stroke-width="2"/>
+  <text x="986" y="542" fill="#F4F7F8" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18">Cable</text>
+  <text x="987" y="566" fill="#F4F7F8" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18">tension</text>
+  <text x="1143" y="542" fill="#F4F7F8" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18">Shape</text>
+  <text x="1148" y="566" fill="#F4F7F8" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18">state</text>
+  <text x="1306" y="542" fill="#F4F7F8" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18">Wrench</text>
+  <text x="1308" y="566" fill="#F4F7F8" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18">estimate</text>
+  <path d="M1080 536H1122" stroke="#73B8B4" stroke-width="4" stroke-dasharray="10 8"/>
+  <path d="M1242 536H1284" stroke="#DB7E38" stroke-width="4" stroke-dasharray="10 8"/>
+  <path d="M1042 340L1010 402" stroke="#C9752F" stroke-width="4"/>
+  <path d="M1052 340L1122 402" stroke="#73B8B4" stroke-width="4"/>
+  <path d="M580 470L920 470" stroke="#A8BBC5" stroke-width="3" stroke-dasharray="10 10"/>
+  <text x="164" y="718" fill="#18364B" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22">Actuation module</text>
+  <text x="890" y="700" fill="#4D5B68" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22">Concurrent shape and force inference</text>
+</svg>

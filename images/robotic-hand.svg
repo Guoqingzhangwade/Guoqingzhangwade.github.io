@@ -1,0 +1,26 @@
+﻿<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1000" fill="#F4F7F8"/>
+  <rect x="48" y="48" width="1504" height="904" rx="28" fill="#FCFDFD" stroke="#D4E0E6" stroke-width="2"/>
+  <text x="120" y="142" fill="#18364B" font-family="IBM Plex Sans, Arial, sans-serif" font-size="34" font-weight="700">Robotic Hand Design and Control</text>
+  <text x="120" y="190" fill="#4D5B68" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20">Finger mechanism study with tendon routing and low-level grasp control</text>
+  <path d="M586 730C536 664 502 598 502 504C502 420 556 360 642 360C694 360 736 386 760 430C782 390 826 360 878 360C944 360 998 406 1012 470C1036 452 1068 442 1104 442C1194 442 1264 516 1264 610C1264 706 1184 778 1088 778H710C658 778 616 760 586 730Z" fill="#10263D"/>
+  <path d="M650 376V194" stroke="#73B8B4" stroke-width="48" stroke-linecap="round"/>
+  <path d="M784 430V162" stroke="#DB7E38" stroke-width="48" stroke-linecap="round"/>
+  <path d="M904 392V182" stroke="#73B8B4" stroke-width="48" stroke-linecap="round"/>
+  <path d="M1018 486V254" stroke="#DB7E38" stroke-width="48" stroke-linecap="round"/>
+  <path d="M1130 542V370" stroke="#73B8B4" stroke-width="48" stroke-linecap="round"/>
+  <path d="M648 420C692 476 720 560 720 648" stroke="#F3C08C" stroke-width="6" stroke-dasharray="10 10"/>
+  <path d="M786 468C828 520 854 576 862 650" stroke="#F3C08C" stroke-width="6" stroke-dasharray="10 10"/>
+  <path d="M906 430C938 496 954 556 958 634" stroke="#F3C08C" stroke-width="6" stroke-dasharray="10 10"/>
+  <rect x="214" y="316" width="238" height="150" rx="26" fill="#18364B"/>
+  <text x="250" y="378" fill="#F4F7F8" font-family="IBM Plex Sans, Arial, sans-serif" font-size="24" font-weight="700">Actuation</text>
+  <text x="250" y="414" fill="#B4C7CF" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18">Servo pack</text>
+  <text x="250" y="442" fill="#B4C7CF" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18">Cable tensioning</text>
+  <rect x="208" y="566" width="254" height="170" rx="26" fill="#E7EEF1" stroke="#73B8B4" stroke-width="3"/>
+  <text x="250" y="628" fill="#18364B" font-family="IBM Plex Sans, Arial, sans-serif" font-size="24" font-weight="700">Control</text>
+  <text x="250" y="664" fill="#4D5B68" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18">Joint sequencing</text>
+  <text x="250" y="692" fill="#4D5B68" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18">Grasp coordination</text>
+  <path d="M452 386H598" stroke="#73B8B4" stroke-width="4" stroke-dasharray="10 10"/>
+  <path d="M462 650H612" stroke="#DB7E38" stroke-width="4" stroke-dasharray="10 10"/>
+  <text x="1180" y="868" fill="#4D5B68" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20">Finger actuation map</text>
+</svg>

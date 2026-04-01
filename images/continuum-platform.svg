@@ -1,0 +1,44 @@
+﻿<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1000" fill="#0D1C2B"/>
+  <rect x="40" y="40" width="1520" height="920" rx="28" fill="#10263D" stroke="#3E6485" stroke-width="2"/>
+  <g opacity="0.18" stroke="#8DB7C3" stroke-width="1">
+    <path d="M120 180H1480"/>
+    <path d="M120 280H1480"/>
+    <path d="M120 380H1480"/>
+    <path d="M120 480H1480"/>
+    <path d="M120 580H1480"/>
+    <path d="M120 680H1480"/>
+    <path d="M120 780H1480"/>
+    <path d="M120 880H1480"/>
+    <path d="M240 120V900"/>
+    <path d="M440 120V900"/>
+    <path d="M640 120V900"/>
+    <path d="M840 120V900"/>
+    <path d="M1040 120V900"/>
+    <path d="M1240 120V900"/>
+  </g>
+  <text x="120" y="140" fill="#F4F7F8" font-family="IBM Plex Sans, Arial, sans-serif" font-size="34" font-weight="700">Continuum Robot Shape Estimation Platform</text>
+  <text x="120" y="188" fill="#8DB7C3" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20">Distributed sensing, cable-driven actuation, and repeatable validation</text>
+  <rect x="160" y="720" width="260" height="120" rx="18" fill="#15334E" stroke="#73B8B4" stroke-width="3"/>
+  <circle cx="220" cy="780" r="28" fill="#73B8B4"/>
+  <circle cx="292" cy="780" r="28" fill="#DB7E38"/>
+  <circle cx="364" cy="780" r="28" fill="#73B8B4"/>
+  <path d="M420 780C520 760 610 690 670 600" stroke="#DB7E38" stroke-width="8" stroke-linecap="round"/>
+  <path d="M420 790C540 780 680 720 790 620" stroke="#73B8B4" stroke-width="6" stroke-linecap="round" stroke-dasharray="12 14"/>
+  <path d="M670 600C735 520 825 450 960 390C1090 332 1188 304 1300 292" stroke="#F3C08C" stroke-width="18" stroke-linecap="round"/>
+  <path d="M690 620C770 555 875 495 972 454C1084 405 1188 380 1315 372" stroke="#F4F7F8" stroke-width="8" stroke-linecap="round" stroke-dasharray="14 18"/>
+  <circle cx="832" cy="508" r="18" fill="#73B8B4"/>
+  <circle cx="935" cy="440" r="18" fill="#73B8B4"/>
+  <circle cx="1044" cy="390" r="18" fill="#73B8B4"/>
+  <circle cx="1158" cy="350" r="18" fill="#73B8B4"/>
+  <rect x="1090" y="620" width="290" height="168" rx="20" fill="#0E1C2B" stroke="#3E6485" stroke-width="2"/>
+  <text x="1124" y="672" fill="#F4F7F8" font-family="IBM Plex Sans, Arial, sans-serif" font-size="26" font-weight="700">Signal Stack</text>
+  <text x="1124" y="718" fill="#8DB7C3" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20">IMU array</text>
+  <text x="1124" y="754" fill="#8DB7C3" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20">Vision reference markers</text>
+  <text x="1124" y="790" fill="#8DB7C3" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20">Adaptive IMM-EKF pipeline</text>
+  <path d="M1220 620L1156 430" stroke="#73B8B4" stroke-width="3" stroke-dasharray="10 10"/>
+  <path d="M308 718L308 650L720 650" stroke="#73B8B4" stroke-width="3" stroke-dasharray="10 10"/>
+  <text x="180" y="880" fill="#F3C08C" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22">Modular base</text>
+  <text x="570" y="700" fill="#F3C08C" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22">Cable routing</text>
+  <text x="1188" y="332" fill="#F3C08C" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22">Continuum backbone</text>
+</svg>
