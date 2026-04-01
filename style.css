@@ -334,6 +334,12 @@ h2::after {
     background: #d5e0e6;
 }
 
+.project-image-portrait {
+    height: min(70vh, 560px);
+    object-fit: contain;
+    background: linear-gradient(180deg, #dfe7ea, #eef3f5);
+}
+
 .showcase-body {
     padding: 24px;
 }
