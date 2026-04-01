@@ -364,6 +364,57 @@ h2::after {
     line-height: 1.75;
 }
 
+.showcase-stats {
+    display: grid;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.showcase-stats span {
+    padding: 12px 14px;
+    border-radius: 14px;
+    background: #f5f9fa;
+    border: 1px solid rgba(46, 108, 130, 0.12);
+    color: var(--text-main);
+    font-size: 0.93rem;
+    line-height: 1.6;
+}
+
+.showcase-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.action-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 16px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.action-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(17, 31, 45, 0.12);
+}
+
+.action-link-primary {
+    background: var(--primary);
+    color: #f7fafc;
+}
+
+.action-link-secondary {
+    background: #eef5f6;
+    color: var(--primary);
+    border: 1px solid rgba(46, 108, 130, 0.14);
+}
+
 .tag {
     display: inline-flex;
     align-items: center;
