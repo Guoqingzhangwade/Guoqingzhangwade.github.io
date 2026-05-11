@@ -8,7 +8,7 @@ The site is a static HTML/CSS portfolio focused on robotics controls, estimation
 
 ## Current Content
 
-- Ph.D. Mechanical Engineering positioning, updated after the May 2026 thesis defense
+- Ph.D. Mechanical Engineering positioning, updated after the April 30, 2026 thesis defense
 - Latest resume link: `files/Resume_Guoqing_2026_v2.pdf`
 - Johnson & Johnson and Auris Health robotics R&D experience
 - Stevens Ph.D. research projects on shape, force, and wrench estimation
