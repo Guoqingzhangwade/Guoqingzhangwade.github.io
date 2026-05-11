@@ -1,259 +1,104 @@
-# Guoqing Zhang - Portfolio Website
+# Guoqing Zhang Portfolio
 
-A clean, professional portfolio website for robotics engineers and researchers.
+Personal robotics portfolio for Guoqing Zhang, hosted with GitHub Pages at:
 
-## 🚀 Quick Start
+https://guoqingzhangwade.github.io
 
-### Option 1: Replace Your Current Template (Recommended)
+The site is a static HTML/CSS portfolio focused on robotics controls, estimation, real-time systems, and continuum/medical robotics research.
 
-1. **Backup your current site** (download all files first)
-2. **Delete all files** in your `Guoqingzhangwade.github.io` repository
-3. **Upload these files:**
-   - `index.html`
-   - `style.css`
-   - `README.md`
-4. Wait 1-2 minutes for GitHub Pages to rebuild
-5. Visit `https://Guoqingzhangwade.github.io`
+## Current Content
 
-### Option 2: Test First in a New Repository
+- Ph.D. Mechanical Engineering positioning, updated after the May 2026 thesis defense
+- Latest resume link: `files/Resume_Guoqing_2026_v2.pdf`
+- Johnson & Johnson and Auris Health robotics R&D experience
+- Stevens Ph.D. research projects on shape, force, and wrench estimation
+- Updated publication status for the accepted IEEE/ASME TMECH/AIM Focused Section paper and AIM presentation
+- Lightweight optional GoatCounter analytics wiring
 
-1. Create a new repository called `portfolio-test`
-2. Upload the files there
-3. Once you're happy, copy to your main site
+## File Structure
 
-## 📁 File Structure
-
-```
+```text
 Guoqingzhangwade.github.io/
-├── index.html              # Main HTML file (content)
-├── style.css               # Stylesheet (design)
-├── README.md               # This file (instructions)
-├── files/                  # Folder for downloadable files
-│   └── Resume_Guoqing_Zhang.pdf
-└── images/                 # Folder for project images
-    ├── jnj_system.jpg
-    ├── auris_speedgoat.jpg
-    ├── phd_robot.jpg
-    └── force_estimation.jpg
+|-- index.html
+|-- style.css
+|-- analytics.js
+|-- README.md
+|-- files/
+|   |-- Resume_Guoqing_Zhang.pdf
+|   |-- Resume_Guoqing_2026_v1.pdf
+|   `-- Resume_Guoqing_2026_v2.pdf
+|-- images/
+|   |-- Large_scale_continuum_testbed.jpg
+|   |-- Small_scale_surgical_continuum_robot.jpg
+|   |-- Robotic_guidewire_driving_system_rendered.png
+|   |-- LAH_grasping_scenarios.png
+|   |-- integrated_shape_force_sim_est.jpg
+|   `-- other SVG/JPG project assets
+|-- Laboratory Assistive Hand.pdf
+`-- 4-26-2.mp4
 ```
 
-## ✏️ How to Edit Content
+## Editing Guide
 
-### 1. Update Your Links
+Most content lives in `index.html`.
 
-**File:** `index.html` (around line 14)
+- Hero summary, links, and recent milestones are near the top of the file.
+- Project cards are in the `Featured Projects & Experience` section.
+- Publication entries are in the `Selected Publications` section.
+- The resume button currently points to `files/Resume_Guoqing_2026_v2.pdf`.
 
-Find:
-```html
-<a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank">💼 LinkedIn</a>
-```
+Visual styling lives in `style.css`.
 
-Change `YOUR_LINKEDIN` to your actual LinkedIn username.
+- Colors and spacing are defined in the `:root` block.
+- Responsive behavior is handled by the media queries at the bottom.
+- Project and showcase image sizing is controlled by `.showcase-image`, `.project-image`, and related utility classes.
 
-### 2. Add Your Resume
+## Analytics
 
-1. Upload your resume PDF to the `files/` folder
-2. Name it: `Resume_Guoqing_Zhang.pdf`
-3. The resume link will work automatically
+The portfolio includes optional GoatCounter analytics for:
 
-### 3. Add Project Images
+- Home page visits
+- Email, LinkedIn, GitHub, and resume clicks
+- Laboratory Assistive Hand report and demo video clicks
 
-**Step 1:** Create an `images` folder in your repository
-
-**Step 2:** Upload your images
-
-**Step 3:** Edit `index.html` and find the commented-out image lines:
-```html
-<!-- <img src="images/jnj_system.jpg" alt="J&J System Diagram" class="project-image"> -->
-```
-
-**Step 4:** Remove the `<!--` and `-->` to uncomment:
-```html
-<img src="images/jnj_system.jpg" alt="J&J System Diagram" class="project-image">
-```
-
-### 4. Edit Text Content
-
-All content is in `index.html`. Just find the text you want to change and edit it directly.
-
-**Example:** To change the "About Me" section, find:
-```html
-<section class="about">
-    <h2>About Me</h2>
-    <p>
-        I'm a Robotics R&D Engineer...
-    </p>
-</section>
-```
-
-Just edit the text between the `<p>` tags.
-
-### 5. Update "What I'm Working On"
-
-Find the `.currently` section (around line 30) and update:
-```html
-<div class="currently-item">
-    <span class="icon">🎓</span>
-    <p><strong>Your Update</strong> — Description here</p>
-</div>
-```
-
-## 🎨 How to Customize Design
-
-### Change Colors
-
-**File:** `style.css` (lines 10-24)
-
-```css
-:root {
-    /* Change these hex codes to customize colors */
-    --primary-blue: #1e3c72;      /* Main dark color */
-    --secondary-blue: #2a5298;    /* Medium color */
-    --accent-blue: #64b5f6;       /* Light accent */
-    /* ... etc */
-}
-```
-
-Use a color picker like [Coolors.co](https://coolors.co) to find new colors.
-
-### Change Fonts
-
-**File:** `style.css` (line 27)
-
-```css
---font-main: 'Your Font Name Here', sans-serif;
-```
-
-For custom fonts, use [Google Fonts](https://fonts.google.com).
-
-### Adjust Spacing
-
-**File:** `style.css` (lines 20-23)
-
-```css
---spacing-small: 10px;    /* Small gaps */
---spacing-medium: 20px;   /* Medium gaps */
---spacing-large: 30px;    /* Large gaps */
---spacing-xlarge: 50px;   /* Extra large gaps */
-```
-
-## 📝 Common Editing Tasks
-
-### Add a New Project
-
-Copy an existing project block in `index.html`:
+Analytics are disabled by default. To enable them, edit this block in `index.html`:
 
 ```html
-<div class="project">
-    <div class="project-header">
-        <div>
-            <div class="company">Your Company Name</div>
-            <h3>Project Title</h3>
-        </div>
-        <div class="date">Date Range</div>
-    </div>
-    <p>Project description...</p>
-    <ul>
-        <li>Achievement 1</li>
-        <li>Achievement 2</li>
-    </ul>
-    <div class="metrics">
-        <strong>Results:</strong> Your metrics here
-    </div>
-    <div class="tags">
-        <span class="tag">Skill 1</span>
-        <span class="tag">Skill 2</span>
-    </div>
-</div>
+<script>
+    window.portfolioAnalytics = {
+        goatcounterSite: "guoqing-portfolio",
+        allowLocal: false
+    };
+</script>
 ```
 
-### Add a New Publication
+`goatcounterSite` can be a site code such as `guoqing-portfolio`, a host such as `guoqing-portfolio.goatcounter.com`, or a full endpoint such as `https://guoqing-portfolio.goatcounter.com/count`.
 
-Copy an existing publication block:
+Keep `allowLocal: false` unless local test traffic should appear in analytics.
 
-```html
-<div class="publication">
-    <div class="authors">Author Names</div>
-    <div class="title">"Paper Title"</div>
-    <div class="venue">
-        Journal/Conference Name
-        <span class="status">Published</span>
-    </div>
-</div>
+## Local Preview
+
+Because this is a static site, opening `index.html` directly in a browser is usually enough.
+
+For a closer GitHub Pages-style preview, run a simple local server from the repo root:
+
+```powershell
+python -m http.server 8000
 ```
 
-### Remove a Section
+Then open:
 
-Find the section you want to remove (e.g., "Currently Working On") and delete from `<section class="currently">` to `</section>`.
+```text
+http://localhost:8000
+```
 
-## 🔧 Troubleshooting
+## Pre-Deployment Checklist
 
-### Changes not showing up?
-- Wait 1-2 minutes for GitHub Pages to rebuild
-- Hard refresh your browser: `Ctrl+Shift+R` (Windows) or `Cmd+Shift+R` (Mac)
-- Clear your browser cache
+- Confirm the resume link opens the newest PDF.
+- Check project images on desktop and mobile widths.
+- Verify external links for email, LinkedIn, GitHub, report, and demo video.
+- Proofread publication statuses before sending the site with job applications.
 
-### Images not loading?
-- Check that the image is in the `images/` folder
-- Check that the filename matches exactly (case-sensitive)
-- Make sure the path is correct: `images/filename.jpg`
+## Last Updated
 
-### Layout looks broken?
-- Make sure you didn't accidentally delete any HTML tags
-- Check that all `<div>` tags have matching `</div>` tags
-- Validate your HTML at [validator.w3.org](https://validator.w3.org)
-
-## 📱 Testing on Different Devices
-
-The site is responsive and works on:
-- Desktop computers
-- Tablets
-- Mobile phones
-
-Test your site on multiple devices to ensure it looks good everywhere.
-
-## 🎯 Best Practices
-
-1. **Keep it updated** - Update your "Currently Working On" section regularly
-2. **Add visuals** - Images make your projects more engaging
-3. **Use specific metrics** - "Reduced time by 50%" is better than "Improved performance"
-4. **Keep it concise** - Highlight your best 3-5 projects, not everything
-5. **Check links** - Make sure all your links work before sharing
-
-## 📚 Learning Resources
-
-- **HTML Tutorial:** [W3Schools HTML](https://www.w3schools.com/html/)
-- **CSS Tutorial:** [W3Schools CSS](https://www.w3schools.com/css/)
-- **GitHub Pages Docs:** [pages.github.com](https://pages.github.com)
-
-## 💡 Maintenance Tips
-
-### Monthly Updates
-- [ ] Update "What I'm Working On" section
-- [ ] Add new publications if any
-- [ ] Check that all links still work
-
-### Before Job Applications
-- [ ] Ensure resume PDF is current
-- [ ] Proofread all text
-- [ ] Test site on mobile device
-- [ ] Verify all images load properly
-
-## 🆘 Getting Help
-
-If you run into issues:
-
-1. **Check this README** - Most common questions are answered here
-2. **Google the error** - If you see an error message, search for it
-3. **GitHub Issues** - Create an issue in your repository for tracking
-4. **Stack Overflow** - Great community for HTML/CSS questions
-
-## 📄 License
-
-This template is free to use and modify for your personal portfolio.
-
----
-
-**Last Updated:** February 2026  
-**Author:** Guoqing Zhang  
-**Contact:** guoqing.wade3@gmail.com
+May 2026
