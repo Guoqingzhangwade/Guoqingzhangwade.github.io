@@ -13,12 +13,13 @@
     --accent: #db7e38;
     --accent-soft: #f3c08c;
     --mint: #73b8b4;
+    --violet: #7c6fe0;
     --shadow-lg: 0 22px 56px rgba(10, 18, 32, 0.18);
     --shadow-md: 0 14px 28px rgba(17, 31, 45, 0.09);
-    --radius-xl: 18px;
-    --radius-lg: 8px;
-    --radius-md: 8px;
-    --radius-sm: 6px;
+    --radius-xl: 22px;
+    --radius-lg: 14px;
+    --radius-md: 12px;
+    --radius-sm: 10px;
     --font-body: "IBM Plex Sans", "Segoe UI", sans-serif;
     --font-display: "Space Grotesk", "Segoe UI", sans-serif;
 }
@@ -126,6 +127,7 @@ section[id] {
 
 .hero {
     position: relative;
+    overflow: hidden;
     display: grid;
     grid-template-columns: minmax(0, 1.8fr) minmax(280px, 0.9fr);
     gap: 32px;
@@ -147,8 +149,74 @@ section[id] {
     mask-image: linear-gradient(135deg, rgba(0, 0, 0, 0.45), transparent 85%);
 }
 
+.aurora {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.aurora-blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(70px);
+    opacity: 0.55;
+    mix-blend-mode: screen;
+    will-change: transform;
+}
+
+.aurora-blob.b1 {
+    width: 420px;
+    height: 420px;
+    top: -140px;
+    left: -100px;
+    background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+    animation: auroraDrift1 24s ease-in-out infinite;
+}
+
+.aurora-blob.b2 {
+    width: 380px;
+    height: 380px;
+    bottom: -160px;
+    right: 8%;
+    background: radial-gradient(circle, var(--mint) 0%, transparent 70%);
+    animation: auroraDrift2 28s ease-in-out infinite;
+}
+
+.aurora-blob.b3 {
+    width: 300px;
+    height: 300px;
+    top: 10%;
+    right: -80px;
+    background: radial-gradient(circle, var(--violet) 0%, transparent 70%);
+    animation: auroraDrift3 20s ease-in-out infinite;
+}
+
+@keyframes auroraDrift1 {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(60px, 40px) scale(1.12); }
+}
+
+@keyframes auroraDrift2 {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(-50px, -30px) scale(1.08); }
+}
+
+@keyframes auroraDrift3 {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(-40px, 50px) scale(0.92); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .aurora-blob {
+        animation: none;
+    }
+}
+
 .page-header {
     position: relative;
+    overflow: hidden;
     padding: 56px 56px 48px;
     color: #f7fafc;
     background: linear-gradient(135deg, #102235 0%, #173b56 54%, #0e1d2d 100%);
@@ -206,14 +274,22 @@ section[id] {
     margin-bottom: 20px;
 }
 
+.avatar-ring {
+    display: inline-block;
+    flex-shrink: 0;
+    padding: 3px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent), var(--mint), var(--violet));
+    box-shadow: var(--shadow-md);
+}
+
 .hero-photo {
+    display: block;
     width: 128px;
     height: 128px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid rgba(255, 255, 255, 0.22);
-    box-shadow: var(--shadow-md);
-    flex-shrink: 0;
+    border: 3px solid #102235;
 }
 
 .hero h1 {
@@ -322,7 +398,7 @@ section[id] {
 }
 
 section {
-    margin-bottom: 56px;
+    margin-bottom: 64px;
 }
 
 h2,
@@ -348,7 +424,8 @@ h2::after {
     width: 88px;
     height: 4px;
     border-radius: 999px;
-    background: linear-gradient(90deg, var(--accent), var(--mint));
+    background: linear-gradient(90deg, var(--accent), var(--mint), var(--violet));
+    box-shadow: 0 0 14px rgba(219, 126, 56, 0.35);
 }
 
 .section-heading p,
@@ -452,15 +529,15 @@ h2::after {
 .showcase-card {
     overflow: hidden;
     border-radius: var(--radius-lg);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .showcase-card:hover,
 .project:hover,
 .skill-category:hover,
 .publication:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 20px 40px rgba(17, 31, 45, 0.14);
+    transform: translateY(-6px);
+    box-shadow: 0 24px 48px rgba(17, 31, 45, 0.16), 0 10px 24px rgba(219, 126, 56, 0.12);
 }
 
 .showcase-image,
@@ -549,8 +626,12 @@ h2::after {
 }
 
 .action-link-primary {
-    background: var(--primary);
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
     color: #f7fafc;
+}
+
+.action-link-primary:hover {
+    box-shadow: 0 14px 28px rgba(46, 108, 130, 0.3);
 }
 
 .action-link-secondary {
@@ -569,6 +650,12 @@ h2::after {
     color: var(--secondary);
     font-size: 0.87rem;
     font-weight: 600;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.tag:hover {
+    transform: translateY(-1px);
+    background: #e4f1f2;
 }
 
 .skills {
@@ -580,7 +667,7 @@ h2::after {
 .skill-category {
     padding: 26px;
     border-radius: var(--radius-md);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .skill-category h3 {
@@ -604,7 +691,7 @@ h2::after {
     padding: 30px;
     margin-bottom: 24px;
     border-radius: var(--radius-lg);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1);
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(248, 251, 252, 0.98));
 }
 
@@ -664,7 +751,7 @@ h2::after {
     padding: 22px;
     margin-bottom: 18px;
     border-radius: var(--radius-md);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .publication-media {
@@ -770,14 +857,17 @@ h2::after {
     color: white;
     font-size: 0.78rem;
     font-style: normal;
+    box-shadow: 0 0 0 3px rgba(40, 114, 95, 0.14);
 }
 
 .status.in-prep {
     background: #3e6485;
+    box-shadow: 0 0 0 3px rgba(62, 100, 133, 0.14);
 }
 
 .status.accepted {
     background: var(--accent);
+    box-shadow: 0 0 0 3px rgba(219, 126, 56, 0.18);
 }
 
 footer {
