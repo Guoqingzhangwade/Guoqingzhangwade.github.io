@@ -42,14 +42,18 @@ Guoqingzhangwade.github.io/
 
 Most content lives in `index.html`.
 
-- Hero summary, links, and recent milestones are near the top of the file.
+- A sticky top nav (`.sitenav`) links to each section by id (`#news`, `#about`, `#showcase`, `#skills`, `#projects`, `#publications`).
+- Hero summary, profile photo (`images/profile.jpg`), links, and recent milestones are near the top of the file.
+- The dated `News` section is just above `Now`; add new entries as `<li><time datetime="YYYY-MM">...</time><span>...</span></li>`.
 - Project cards are in the `Featured Projects & Experience` section.
 - Publication entries are in the `Selected Publications` section.
 - The resume button currently points to `files/Resume_Guoqing_2026_v2.pdf`.
+- Links row includes Email, LinkedIn, GitHub, Google Scholar, and Resume.
 
 Visual styling lives in `style.css`.
 
 - Colors and spacing are defined in the `:root` block.
+- Nav styling is under `.sitenav`; the hero photo/identity row is under `.hero-identity` / `.hero-photo`; News entries are under `.news-list`.
 - Responsive behavior is handled by the media queries at the bottom.
 - Project and showcase image sizing is controlled by `.showcase-image`, `.project-image`, and related utility classes.
 

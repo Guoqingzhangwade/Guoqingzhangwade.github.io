@@ -20,15 +20,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <nav class="sitenav" aria-label="Section navigation">
+        <div class="sitenav-inner">
+            <a href="#top" class="sitenav-brand">Guoqing Zhang</a>
+            <div class="sitenav-links">
+                <a href="#news">News</a>
+                <a href="#about">About</a>
+                <a href="#showcase">Research</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Experience</a>
+                <a href="#publications">Publications</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container" id="top">
         <header class="hero">
             <div class="header-content">
                 <p class="eyebrow">Robotics Controls &amp; Systems Engineer | Ph.D. Mechanical Engineering</p>
-                <h1>Guoqing Zhang</h1>
-                <p class="tagline">
-                    Building real-time estimation, control, and verification systems for
-                    continuum and medical robots.
-                </p>
+                <div class="hero-identity">
+                    <img src="images/profile.jpg" alt="Portrait of Guoqing Zhang" class="hero-photo" width="160" height="160" loading="eager">
+                    <div>
+                        <h1>Guoqing Zhang</h1>
+                        <p class="tagline">
+                            Building real-time estimation, control, and verification systems for
+                            continuum and medical robots.
+                        </p>
+                    </div>
+                </div>
                 <p class="location">North Bergen, New Jersey | Ph.D., Stevens Institute of Technology</p>
                 <div class="hero-highlights">
                     <span>Ph.D. thesis defended April 30, 2026</span>
@@ -39,6 +57,7 @@
                     <a href="mailto:guoqing.wade3@gmail.com" data-goatcounter-click="contact-email" data-goatcounter-title="Email click">Email</a>
                     <a href="https://www.linkedin.com/in/guoqing-zhang-088960148/" target="_blank" rel="noreferrer" data-goatcounter-click="contact-linkedin" data-goatcounter-title="LinkedIn click">LinkedIn</a>
                     <a href="https://github.com/Guoqingzhangwade" target="_blank" rel="noreferrer" data-goatcounter-click="contact-github" data-goatcounter-title="GitHub click">GitHub</a>
+                    <a href="https://scholar.google.com/citations?user=mcVUH9MAAAAJ&amp;hl=en&amp;authuser=1" target="_blank" rel="noreferrer" data-goatcounter-click="contact-scholar" data-goatcounter-title="Google Scholar click">Google Scholar</a>
                     <a href="files/Resume_Guoqing_2026_v2.pdf" target="_blank" rel="noreferrer" data-goatcounter-click="resume-download" data-goatcounter-title="Resume click">Resume</a>
                 </div>
             </div>
@@ -53,6 +72,16 @@
         </header>
 
         <main class="content">
+            <section class="news" id="news">
+                <h2>News</h2>
+                <ul class="news-list">
+                    <li><time datetime="2026-04-30">Apr 2026</time><span>Defended Ph.D. thesis at Stevens Institute of Technology.</span></li>
+                    <li><time datetime="2026-04">Apr 2026</time><span>First-author paper accepted to the <strong>IEEE/ASME TMECH/AIM Focused Section</strong>, with an associated presentation at IEEE/ASME AIM.</span></li>
+                    <li><time datetime="2026-01">Jan 2026</time><span>Published "Stochastic Adaptive Estimation in Polynomial Curvature Shape State Space for Continuum Robots" in <strong>IEEE Transactions on Robotics</strong>.</span></li>
+                    <li><time datetime="2026-05">May 2026</time><span>Began exploring robotics controls, systems, and software engineering roles.</span></li>
+                </ul>
+            </section>
+
             <section class="currently">
                 <h2>Now</h2>
                 <div class="currently-items">
@@ -80,7 +109,7 @@
                 </div>
             </section>
 
-            <section class="about">
+            <section class="about" id="about">
                 <h2>About Me</h2>
                 <p>
                     I am a robotics controls and systems engineer with a Ph.D. in Mechanical Engineering
@@ -103,7 +132,7 @@
                 </p>
             </section>
 
-            <section class="visual-story">
+            <section class="visual-story" id="showcase">
                 <div class="section-heading">
                     <h2>Research Platforms &amp; Robotics Builds</h2>
                     <p>
@@ -200,7 +229,7 @@
                 </div>
             </section>
 
-            <section class="skills-section">
+            <section class="skills-section" id="skills">
                 <h2>Technical Skills</h2>
                 <div class="skills">
                     <div class="skill-category">
@@ -244,7 +273,7 @@
                 </div>
             </section>
 
-            <section class="projects-section">
+            <section class="projects-section" id="projects">
                 <h2>Featured Projects &amp; Experience</h2>
 
                 <article class="project">
@@ -393,7 +422,7 @@
                 </article>
             </section>
 
-            <section class="publications-section">
+            <section class="publications-section" id="publications">
                 <h2>Selected Publications</h2>
 
                 <article class="publication">
