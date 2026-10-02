@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -32,23 +32,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="sitenav" aria-label="Section navigation">
+    <nav class="sitenav" aria-label="Site navigation">
         <div class="sitenav-inner">
-            <a href="#top" class="sitenav-brand">Guoqing Zhang</a>
+            <a href="index.html" class="sitenav-brand">Guoqing Zhang</a>
             <div class="sitenav-links">
-                <a href="#news">News</a>
-                <a href="#about">About</a>
-                <a href="#showcase">Research</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Experience</a>
-                <a href="#publications">Publications</a>
+                <a href="index.html" class="active" aria-current="page">Home</a>
+                <a href="about.html">About</a>
+                <a href="news.html">News</a>
+                <a href="projects.html">Projects</a>
+                <a href="publications.html">Publications</a>
             </div>
         </div>
     </nav>
     <div class="container" id="top">
         <header class="hero">
             <div class="header-content">
-                <p class="eyebrow">Robotics Controls &amp; Systems Engineer | Ph.D. Mechanical Engineering</p>
+                <p class="eyebrow">Ph.D., Mechanical Engineering | Incoming Postdoctoral Researcher, UC San Diego</p>
                 <div class="hero-identity">
                     <img src="images/profile.jpg" alt="Portrait of Guoqing Zhang" class="hero-photo" width="160" height="160" loading="eager">
                     <div>
@@ -62,7 +61,8 @@
                 <p class="location">North Bergen, New Jersey | Ph.D., Stevens Institute of Technology</p>
                 <div class="hero-highlights">
                     <span>Ph.D. thesis defended April 30, 2026</span>
-                    <span>TMECH/AIM paper accepted</span>
+                    <span>TMECH/AIM paper published</span>
+                    <span>Postdoc @ UC San Diego, Nov 2026</span>
                     <span>Real-time systems up to 1 kHz</span>
                 </div>
                 <div class="links">
@@ -77,415 +77,57 @@
                 <p class="panel-label">Recent milestones</p>
                 <ul>
                     <li>Completed Ph.D. thesis defense on April 30, 2026</li>
-                    <li>Accepted first-author IEEE/ASME TMECH/AIM Focused Section paper, with AIM presentation</li>
-                    <li>Exploring robotics controls, systems, and software roles</li>
+                    <li>Published first-author IEEE/ASME TMECH/AIM Focused Section paper (June 24, 2026); presented at IEEE/ASME AIM 2026 in Genova, Italy</li>
+                    <li>Joining UC San Diego ECE as a postdoctoral researcher in November 2026, working with Prof. Nikolay Atanasov and Prof. Tania Morimoto on an ARPA-H-funded soft continuum robot project</li>
                 </ul>
             </aside>
         </header>
 
         <main class="content">
-            <section class="news" id="news">
-                <h2>News</h2>
-                <ul class="news-list">
-                    <li><time datetime="2026-04-30">Apr 2026</time><span>Defended Ph.D. thesis at Stevens Institute of Technology.</span></li>
-                    <li><time datetime="2026-04">Apr 2026</time><span>First-author paper accepted to the <strong>IEEE/ASME TMECH/AIM Focused Section</strong>, with an associated presentation at IEEE/ASME AIM.</span></li>
-                    <li><time datetime="2026-01">Jan 2026</time><span>Published "Stochastic Adaptive Estimation in Polynomial Curvature Shape State Space for Continuum Robots" in <strong>IEEE Transactions on Robotics</strong>.</span></li>
-                    <li><time datetime="2026-05">May 2026</time><span>Began exploring robotics controls, systems, and software engineering roles.</span></li>
-                </ul>
-            </section>
-
             <section class="currently">
                 <h2>Now</h2>
                 <div class="currently-items">
                     <article class="currently-item">
                         <span class="item-label">Research</span>
                         <p>
-                            Wrapping up Ph.D. research on continuum robot shape, force, and wrench
-                            estimation with real-time validation on custom mechatronics platforms.
+                            Completed Ph.D. research on continuum robot shape, force, and wrench
+                            estimation, with real-time validation on custom mechatronics platforms;
+                            now carrying that work into postdoctoral research.
                         </p>
                     </article>
                     <article class="currently-item">
                         <span class="item-label">Career</span>
                         <p>
-                            Looking for robotics controls and systems roles where modeling, estimation,
-                            software, and hardware integration all matter.
+                            Joining UC San Diego's Department of Electrical and Computer Engineering
+                            in November 2026 as a postdoctoral researcher, working with Prof. Nikolay
+                            Atanasov and Prof. Tania Morimoto on an ARPA-H-funded soft continuum robot
+                            project for stroke intervention.
                         </p>
                     </article>
                     <article class="currently-item">
                         <span class="item-label">Publications</span>
                         <p>
-                            Advancing accepted IEEE/ASME TMECH/AIM Focused Section work and preparing the next SE(3)-based
-                            shape-wrench estimation manuscript.
+                            TMECH/AIM Focused Section paper officially published and presented at AIM
+                            2026 in Genova; preparing the next SE(3)-based shape-wrench estimation
+                            manuscript.
                         </p>
                     </article>
                 </div>
             </section>
 
-            <section class="about" id="about">
-                <h2>About Me</h2>
-                <p>
-                    I am a robotics controls and systems engineer with a Ph.D. in Mechanical Engineering
-                    and 5+ years of experience building and validating continuum and medical robotic
-                    systems. I have contributed to R&amp;D tooling and experimental robotics platforms with
-                    <strong>Johnson &amp; Johnson</strong> and <strong>Auris Health</strong>, working across
-                    C++, Python, MATLAB/Simulink, ROS2, Simulink Real-Time, Speedgoat, EtherCAT, and
-                    hardware/software integration.
-                </p>
-                <p>
-                    My doctoral research at Stevens Institute of Technology focused on state estimation
-                    algorithms that allow continuum robots to estimate shape, interaction forces, and
-                    external wrenches in real time, combining sensing, mechanics, and geometric modeling
-                    into systems that can run on physical hardware.
-                </p>
-                <p>
-                    I enjoy building across the full robotics stack: CAD and mechatronics design,
-                    sensing architecture, estimation and controls, embedded I/O, software tooling, and
-                    experimental validation on benchtop and real-time test platforms.
-                </p>
-            </section>
-
-            <section class="visual-story" id="showcase">
-                <div class="section-heading">
-                    <h2>Research Platforms &amp; Robotics Builds</h2>
-                    <p>
-                        A more visual look at the kinds of systems I build: instrumented continuum
-                        robot platforms, force-sensing mechatronics rigs, and compact robotic devices
-                        developed through research and side projects.
-                    </p>
-                </div>
-                <div class="showcase-grid">
-                    <article class="showcase-card showcase-card-large">
-                        <img src="images/Large_scale_continuum_testbed.jpg" alt="Continuum robot CAD and sensing testbed" class="showcase-image project-image-portrait" loading="lazy">
-                        <div class="showcase-body">
-                            <p class="card-label">Ph.D. Research Platform 01</p>
-                            <h3>Continuum Robot Shape Estimation Testbed</h3>
-                            <p>
-                                A modular hardware platform for validating adaptive shape estimation
-                                with distributed sensing, cable actuation, and repeatable bench-top
-                                experiments.
-                            </p>
-                            <div class="tags">
-                                <span class="tag">CAD design</span>
-                                <span class="tag">Distributed sensing</span>
-                                <span class="tag">Continuum robot</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="showcase-card showcase-card-large">
-                        <img src="images/Small_scale_surgical_continuum_robot.jpg" alt="Force-sensing continuum robot mechatronics platform" class="showcase-image showcase-image-contain" loading="lazy">
-                        <div class="showcase-body">
-                            <p class="card-label">Ph.D. Research Platform 02</p>
-                            <h3>Integrated Shape-Force Mechatronics Rig</h3>
-                            <p>
-                                A hardware platform combining cable-driven actuation, inline torque
-                                sensing, and real-time data acquisition for concurrent shape and force
-                                estimation.
-                            </p>
-                            <div class="tags">
-                                <span class="tag">Torque cells</span>
-                                <span class="tag">Mechatronics</span>
-                                <span class="tag">Real-time validation</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="showcase-card">
-                        <img src="images/Robotic_guidewire_driving_system_rendered.png" alt="Robotic guidewire driving system render" class="showcase-image" loading="lazy">
-                        <div class="showcase-body">
-                            <p class="card-label">Side / Course Project</p>
-                            <h3>Robotic Guidewire Driving System</h3>
-                            <p>
-                                Concept work around a compact drive module for controlled guidewire
-                                feed and rotation, focused on precision transmission and operator-safe
-                                mechanical packaging.
-                            </p>
-                            <div class="tags">
-                                <span class="tag">Drive design</span>
-                                <span class="tag">Transmission layout</span>
-                                <span class="tag">Medical robotics</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="showcase-card">
-                        <img src="images/LAH_grasping_scenarios.png" alt="Tendon-driven laboratory assistive hand grasping scenarios" class="showcase-image" loading="lazy">
-                        <div class="showcase-body">
-                            <p class="card-label">Team Course Project | Columbia University</p>
-                            <h3>Laboratory Assistive Hand (LAH)</h3>
-                            <p>
-                                Team-built a tendon-driven, underactuated assistive hand for remote
-                                laboratory handling and titration. The design used a single actuator
-                                to coordinate two fingers, spring-biased tendon routing, and distal
-                                sliders for both stable grasping and controlled dropper squeezing.
-                            </p>
-                            <div class="showcase-stats">
-                                <span>GraspIt! grasp quality improved from 0.074 to 0.145 across design iterations</span>
-                                <span>Validated 80% dropper, 90% test tube, and 80% beaker grasp success over 20 trials</span>
-                                <span>Integrated FSR sensing, Arduino servo control, and Baxter-assisted titration demo</span>
-                            </div>
-                            <div class="showcase-actions">
-                                <a href="Laboratory%20Assistive%20Hand.pdf" target="_blank" rel="noreferrer" class="action-link action-link-primary" data-goatcounter-click="lah-project-report" data-goatcounter-title="Laboratory Assistive Hand project report click">Project Report</a>
-                                <a href="4-26-2.mp4" target="_blank" rel="noreferrer" class="action-link action-link-secondary" data-goatcounter-click="lah-demo-video" data-goatcounter-title="Laboratory Assistive Hand demo video click">Demo Video</a>
-                            </div>
-                            <div class="tags">
-                                <span class="tag">Underactuated hand</span>
-                                <span class="tag">Tendon-driven</span>
-                                <span class="tag">GraspIt!</span>
-                                <span class="tag">FSR sensing</span>
-                                <span class="tag">Arduino</span>
-                                <span class="tag">Baxter</span>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <section class="skills-section" id="skills">
-                <h2>Technical Skills</h2>
-                <div class="skills">
-                    <div class="skill-category">
-                        <h3>Programming</h3>
-                        <ul>
-                            <li>C++ and object-oriented software design</li>
-                            <li>Python for tooling, analysis, and automation</li>
-                            <li>MATLAB and Simulink</li>
-                            <li>Git, Linux, and research software workflows</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Robotics &amp; Controls</h3>
-                        <ul>
-                            <li>ROS and ROS2</li>
-                            <li>Motion-control analysis and system identification</li>
-                            <li>EKF and IMM-based state estimation</li>
-                            <li>Sensor fusion, kinematics, statics, and dynamics</li>
-                            <li>Continuum and cable-driven robot modeling</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Real-Time &amp; Verification</h3>
-                        <ul>
-                            <li>Simulink Real-Time</li>
-                            <li>Speedgoat deployment and logging</li>
-                            <li>EtherCAT communication</li>
-                            <li>1 kHz logging, algorithm validation, and hardware-in-the-loop testing</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Hardware &amp; Design</h3>
-                        <ul>
-                            <li>SolidWorks CAD</li>
-                            <li>Motor and servo integration</li>
-                            <li>EM, IMU, vision, tension, and torque sensing</li>
-                            <li>Embedded I/O and electromechanical prototyping</li>
-                            <li>Actuation packaging and bench-top validation</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <section class="projects-section" id="projects">
-                <h2>Featured Projects &amp; Experience</h2>
-
-                <article class="project">
-                    <div class="project-header">
-                        <div>
-                            <div class="company">Johnson &amp; Johnson | Ottava Surgical Robotics Program</div>
-                            <h3>Continuum Instrument State Observer Development</h3>
-                        </div>
-                        <div class="date">Oct 2021 - May 2022</div>
-                    </div>
-                    <p>
-                        Developed real-time state estimation systems for a 7-DOF flexible surgical
-                        instrument with cable-driven bending, insertion, and roll. Built configuration-space
-                        Extended Kalman Filter observers to estimate instrument pose from multi-sensor fusion
-                        and support prototype motion-fidelity evaluation.
-                    </p>
-                    <ul>
-                        <li>Derived continuum-instrument kinematics and geometric Jacobians for a cable-driven wrist</li>
-                        <li>Implemented an EKF observer with analytic measurement Jacobians and OptiTrack fusion</li>
-                        <li>Built pose-error analysis using Gaussian position ellipsoids and Bingham quaternion statistics</li>
-                        <li>Developed ROS2 and RViz tooling for multi-sensor debugging and experimental validation</li>
-                    </ul>
-                    <div class="metrics">
-                        <strong>Performance:</strong> Less than 5 mm position error and less than 5 degrees
-                        orientation error in typical cases, with worst-case behavior around 17 mm and 23 degrees.
-                    </div>
-                    <div class="tags">
-                        <span class="tag">ROS2</span>
-                        <span class="tag">EKF</span>
-                        <span class="tag">OptiTrack</span>
-                        <span class="tag">Sensor fusion</span>
-                        <span class="tag">C++</span>
-                    </div>
-                </article>
-
-                <article class="project">
-                    <div class="project-header">
-                        <div>
-                            <div class="company">Auris Health | Johnson &amp; Johnson</div>
-                            <h3>Real-Time Control Platform for Bronchoscopy Robot</h3>
-                        </div>
-                        <div class="date">May 2020 - Aug 2020</div>
-                    </div>
-                    <p>
-                        Built a Simulink Real-Time platform on Speedgoat hardware to accelerate
-                        control algorithm development for surgical robotics and integrate a distributed
-                        electromechanical hardware stack with deterministic timing.
-                    </p>
-                    <ul>
-                        <li>Built a workflow with automatic C code generation, online tuning, and 1 kHz logging</li>
-                        <li>Integrated EM tracker, torque cells, and Elmo servo drives over UDP and EtherCAT</li>
-                        <li>Implemented wire tensioning, initialization, and quintic trajectory planning features</li>
-                        <li>Performed motor system identification using chirp excitation and frequency response analysis</li>
-                    </ul>
-                    <div class="metrics">
-                        <strong>Impact:</strong> Reduced control iteration time from days to hours while enabling
-                        1 kHz real-time execution across a multi-actuator platform.
-                    </div>
-                    <div class="tags">
-                        <span class="tag">Simulink Real-Time</span>
-                        <span class="tag">Speedgoat</span>
-                        <span class="tag">EtherCAT</span>
-                        <span class="tag">System ID</span>
-                        <span class="tag">MATLAB</span>
-                    </div>
-                </article>
-
-                <article class="project">
-                    <div class="project-header">
-                        <div>
-                            <div class="company">Stevens Institute of Technology | Ph.D. Research</div>
-                            <h3>Adaptive Shape Estimation for Continuum Robots</h3>
-                        </div>
-                        <div class="date">2022 - 2026</div>
-                    </div>
-                    <p>
-                        Developed stochastic shape estimation algorithms in a polynomial-curvature state
-                        space with adaptive multi-model filtering for robustness under sparse, noisy sensing.
-                        This work is published in <strong>IEEE Transactions on Robotics</strong>.
-                    </p>
-                    <ul>
-                        <li>Implemented IMM-EKF estimation across varying deformation regimes</li>
-                        <li>Built real-time estimation stacks on ROS2 and Python</li>
-                        <li>Designed validation around camera/ArUco feedback, IMUs, cable tension, and load-cell references</li>
-                        <li>Released reusable ROS2 estimation packages used across the lab</li>
-                    </ul>
-                    <div class="metrics">
-                        <strong>Accuracy:</strong> 0.38 percent tip position error, 0.24 percent shape position
-                        error, and 0.63 degrees per 100 mm tip bending.
-                    </div>
-                    <div class="project-media">
-                        <img src="images/one_seg_exp_scenario.svg" alt="Continuum robot shape estimation platform illustration" class="project-image project-image-portrait" loading="lazy">
-                        <p class="media-caption">
-                            Modular testbed used to connect sensing, estimation, and repeatable hardware experiments.
-                        </p>
-                    </div>
-                    <div class="tags">
-                        <span class="tag">IMM-EKF</span>
-                        <span class="tag">Polynomial curvature</span>
-                        <span class="tag">Sparse sensing</span>
-                        <span class="tag">Observability</span>
-                        <span class="tag">Tip-pose sensing</span>
-                    </div>
-                </article>
-
-                <article class="project">
-                    <div class="project-header">
-                        <div>
-                            <div class="company">Stevens Institute of Technology | Ph.D. Research</div>
-                            <h3>Integrated Shape-Force Estimation Framework</h3>
-                        </div>
-                        <div class="date">2022 - 2026</div>
-                    </div>
-                    <p>
-                        Developed a two-stage curvature-space framework that fuses cable tensions with
-                        tip-pose sensing to estimate both continuum robot shape and distal interaction
-                        forces. This work is accepted in <strong>IEEE/ASME Transactions on Mechatronics</strong> through
-                        the <strong>TMECH/AIM Focused Section</strong> and will be presented at IEEE/ASME AIM.
-                    </p>
-                    <ul>
-                        <li>Derived a virtual-work static formulation directly in polynomial-curvature coordinates for shape-to-wrench inference</li>
-                        <li>Combined tip-pose sensing with cable tensions using a compact weighted least-squares redundancy formulation</li>
-                        <li>Built a torque-cell-enabled cable-driven continuum robot platform for synchronized hardware validation</li>
-                        <li>Demonstrated a lightweight pipeline with closed-form, iteration-free force estimation and experimental validation</li>
-                        <li>Accepted as a first-author IEEE/ASME TMECH/AIM Focused Section paper, with associated AIM presentation</li>
-                    </ul>
-                    <div class="metrics">
-                        <strong>Accuracy:</strong> In simulation, second-order polynomial curvature achieved
-                        0.33 mm tip-position MAE, 0.54 mm arc-length-averaged shape-position MAE,
-                        and 0.468 N force-estimation error.
-                    </div>
-                    <div class="project-media">
-                        <img src="images/integrated_shape_force_sim_est.jpg" alt="Integrated shape and force estimation mechatronics illustration" class="project-image project-image-contain" loading="lazy">
-                        <p class="media-caption">
-                            Custom mechatronics platform with cable routing, inline sensing, and synchronized data capture.
-                        </p>
-                    </div>
-                    <div class="tags">
-                        <span class="tag">PCK</span>
-                        <span class="tag">Virtual work</span>
-                        <span class="tag">Force sensing</span>
-                        <span class="tag">Torque cells</span>
-                        <span class="tag">Weighted least squares</span>
-                        <span class="tag">Cable-driven robots</span>
-                    </div>
-                </article>
-            </section>
-
-            <section class="publications-section" id="publications">
-                <h2>Selected Publications</h2>
-
-                <article class="publication publication-media">
-                    <img src="images/thumb-shape-estimation.jpg" alt="Continuum robot shape estimation experimental scenarios" class="publication-thumb" loading="lazy">
-                    <div class="publication-body">
-                        <div class="authors">G. Zhang and L. Wang</div>
-                        <div class="title">Stochastic Adaptive Estimation in Polynomial Curvature Shape State Space for Continuum Robots</div>
-                        <div class="venue">
-                            <strong>IEEE Transactions on Robotics</strong>, 2026
-                            <span class="status">Published</span>
-                        </div>
-                        <div class="publication-actions">
-                            <a href="https://doi.org/10.1109/TRO.2025.3637147" target="_blank" rel="noreferrer" class="action-link action-link-primary" data-goatcounter-click="pub-tro2026-doi" data-goatcounter-title="TRO 2026 DOI click">View Paper (DOI)</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="publication publication-media">
-                    <img src="images/thumb-shape-force.jpg" alt="Integrated shape and force estimation mechatronics platform" class="publication-thumb" loading="lazy">
-                    <div class="publication-body">
-                        <div class="authors">G. Zhang, Z. Chen, and L. Wang</div>
-                        <div class="title">Integrated Shape-Force Estimation for Continuum Robots: A Virtual-Work and Polynomial-Curvature Framework</div>
-                        <div class="venue">
-                            <strong>IEEE/ASME Transactions on Mechatronics</strong>, <strong>TMECH/AIM Focused Section</strong>, accepted, 2026; to be presented at IEEE/ASME AIM
-                            <span class="status accepted">Accepted / AIM</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="publication">
-                    <div class="authors">G. Zhang, Q. Zhao, and L. Wang</div>
-                    <div class="title">Recursive Shape Estimation and External Wrench Inference for Continuum Robots: An SE(3)-Based Reduced-Order Modal Framework</div>
-                    <div class="venue">
-                        <strong>IEEE Transactions on Robotics</strong>
-                        <span class="status in-prep">In Preparation</span>
-                    </div>
-                </article>
-
-                <article class="publication">
-                    <div class="authors">Q. Zhao, G. Zhang, H. Jafarnejadsani, and L. Wang</div>
-                    <div class="title">A Modular Continuum Manipulator for Aerial Manipulation and Perching</div>
-                    <div class="venue">
-                        ASME IDETC 2022
-                        <span class="status">Published</span>
-                    </div>
-                </article>
+            <section class="news">
+                <h2>Latest News</h2>
+                <ul class="home-news-preview">
+                    <li><time datetime="2026-11">Nov 2026</time><span>Starting a postdoctoral research position in <strong>UC San Diego's ECE department</strong>, working with Prof. Nikolay Atanasov and Prof. Tania Morimoto on an ARPA-H-funded soft continuum robot project.</span></li>
+                    <li><time datetime="2026-09-28">Sep 2026</time><span>IEEE Transactions on Robotics paper presented by co-author Dr. Long Wang at <strong>IROS 2026</strong> in Pittsburgh, PA.</span></li>
+                    <li><time datetime="2026-07-10">Jul 2026</time><span>Presented the TMECH/AIM Focused Section paper (remotely) at <strong>IEEE/ASME AIM 2026</strong> in Genova, Italy.</span></li>
+                </ul>
+                <p class="section-footnote"><a href="news.html">View full news history &rarr;</a></p>
             </section>
         </main>
 
         <footer>
-            <p>&copy; 2026 Guoqing Zhang | Robotics portfolio updated May 2026</p>
+            <p>&copy; 2026 Guoqing Zhang | Robotics portfolio updated October 2026</p>
         </footer>
     </div>
 </body>
